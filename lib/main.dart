@@ -1,10 +1,10 @@
-import 'package:first_flutter_app/home_screen.dart';
-import 'package:first_flutter_app/login_screen.dart';
-import 'package:first_flutter_app/messenger_screen.dart';
-import 'package:first_flutter_app/user_screen.dart';
+import 'package:first_flutter_app/modules/home/home_screen.dart';
+import 'package:first_flutter_app/modules/login/login_screen.dart';
+import 'package:first_flutter_app/modules/messenger/messenger_screen.dart';
+import 'package:first_flutter_app/modules/users/user_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'counter_screen.dart';
+import 'modules/counter/counter_screen.dart';
 
 void main() {
   runApp(TestApp());
@@ -15,7 +15,7 @@ class TestApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CounterScreen() ,
+      home: LoginScreen() ,
     );
   }
 }
